@@ -1,0 +1,17 @@
+{
+  "name": "apirest",
+  "version": "1.0.0",
+  "description": "Aplicacion para conectarnos con nuestro erp y nuestro sistema de plan lealtad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Manuel Badilla Porras",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.15.3",
+    "method-override": "^2.3.9",
+    "mysql": "^2.13.0"
+  }
+}
