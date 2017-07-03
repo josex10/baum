@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JO Furniture</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="public/img/logo32.png">
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+</head>
+<body>
+
+<div class="container">
+
+	<!-- Menu -->
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JOFurniture</a>
+			    </div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					<li class="active"><a href="?view=index">Inicio<span class="sr-only">(current)</span></a></li>
+					<li><a href="?view=administrarcliente">Administrar Clientes</a></li>
+					<li><a href="?view=agregarcliente">Agregar Clientes</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+		
+	<div class="jumbotron jumbotronColor">
+		<h1>JOFurniture</h1>
+		<h2>Bienvenidos al Sistema Plan Lealtad</h2>
+		<p>El sistema Plan Lealtad de JOFurniture, es un sistema que permite administrar los clientes de la empresa así como sus puntos cashback que les otorga la empresa por su fidelidad.</p>		
+	</div>
+
+	<!-- Clientes -->
+
+	<div class="row thumbnailIndex">
+
+
+		<div class="col-sm-6 col-md-6">
+			<div class="thumbnail thumbnailAdmin">
+				<img class="img-responsive" src="public/img/thumbnailAdmin.png">
+				<div class="caption">
+					<h3>Administrar Clientes</h3>
+					<p>En esta sección podrás buscar nuestros clientes por distintos métodos para poder editarlo, deshabilitarlo, consultar los puntos cashback y visualizar sus movimientos.</p>
+					<div class="thumbnailBtn">
+					    <a href="?view=administrarcliente" class="btn btn-danger" role="button">Visitar la sección</a> 
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-6">
+			<div class="thumbnail thumbnailAgregar">
+				<img class="img-responsive" src="public/img/thumbnailAgregar.png">
+				<div class="caption">
+					<h3>Agregar Clientes</h3>
+					<p>En esta sección se podrá agregar nuevos clientes a la compañía, para poder acumular puntos en sus compras.</p>
+					<div class="thumbnailBtn">
+					    <a href="?view=agregarcliente" class="btn btn-danger" role="button">Visitar la sección</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- Pie de Pagina -->
+	<div class="row">
+		<footer>
+			<p>Copyright © Todos los Derechos Reservados JOFurniture 2017</p>
+		</footer>
+	</div>
+	
+
+</div>
+
+
+
+	
+	<script type="text/javascript" src="public/jquery/jquery.js"></script>
+	<script type="text/javascript" src="public/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="public/js/index.js"></script>
+</body>
+</html>

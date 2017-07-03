@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JOFurniture Agregar Clientes</title>
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="public/jquery/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+</head>
+<body>
+
+<div class="container">
+	<!-- Menu -->
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JOFurniture</a>
+			    </div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					<li><a href="?view=index">Inicio</a></li>
+					<li><a href="?view=administrarcliente">Administrar Clientes</a></li>
+					<li class="active"><a href="#">Agregar Clientes<span class="sr-only">(current)</span></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<!-- Texto -->
+	<div class="jumbotron">
+		<h1>¡Hurray... Cliente Nuevo!</h1>
+		<p>Los clientes son el motor de nuestra compañía, nos complace tener tantos clientes como sea posible.</p>
+	</div>	
+
+	<!-- Formulario -->
+	<div class="panel panel-primary">
+
+		<div class="panel-heading">
+			Formulario
+		</div>
+
+		<div class="panel-body">
+
+			<div class="form-group">
+				<label for="frmNuevoClienteCedula">Cédula</label>
+				<input type="text" class="form-control" id="frmNuevoClienteCedula" placeholder="Cédula" maxlength="20">
+			</div>
+
+			<div class="form-group">
+				<label for="frmNuevoClienteNombre">Nombre</label>
+				<input type="text" class="form-control" id="frmNuevoClienteNombre" placeholder="Nombre" maxlength="20">
+			</div>
+
+			<div class="form-group">
+				<label for="frmNuevoClienteApellido">Apellido</label>
+				<input type="text" class="form-control" id="frmNuevoClienteApellido" placeholder="Apellido" maxlength="20">
+			</div>
+
+			<div class="form-group">
+				<label for="frmNuevoClienteTelefono">Teléfono</label>
+				<input type="text" class="form-control" id="frmNuevoClienteTelefono" placeholder="Teléfono" maxlength="20">
+			</div>
+
+			<div class="form-group">
+				<label for="frmNuevoClienteFechaNac">Fecha de Nacimiento</label>
+				<input type="date" class="form-control" id="frmNuevoClienteFechaNac" placeholder="YYYY/mm/dd">
+			</div>
+
+			<button class="btn btn-primary" id="btnAgregarCliente">Agregar Cliente</button>
+
+		</div>
+
+		<div class="panel-footer">
+
+			<div class="alert alert-success hidden" role="alert" id="alertSuccess">
+			  	<a href="#" class="alert-link" id="alertSuccessTxt">...</a>
+			</div>
+
+			<div class="alert alert-danger hidden" role="alert" id="alertError">
+				<a href="#" class="alert-link" id="alertErrorTxt">...</a>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+	<script type="text/javascript" src="public/jquery/jquery.js"></script>
+	<script type="text/javascript" src="public/jquery/jquery-ui.js"></script>
+	<script type="text/javascript" src="public/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="public/js/agregarCliente.js"></script>
+</body>
+</html>

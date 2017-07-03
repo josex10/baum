@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JOFurniture Agregar Clientes</title>
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="public/jquery/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+</head>
+<body>
+
+<div class="container">
+	<!-- Menu -->
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JOFurniture</a>
+			    </div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					<li><a href="?view=index">Inicio</a></li>
+					<li class="active"><a href="?view=administrarcliente">Administrar Clientes<span class="sr-only">(current)</span></a></li>
+					<li><a href="?view=agregarCliente">Agregar Clientes</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<div class="container">
+		<div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#perfil" aria-controls="perfil" role="tab" data-toggle="tab">Perfil</a></li>
+				<li role="presentation"><a href="#transacciones" aria-controls="transacciones" role="tab" data-toggle="tab">Transacciones</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade  in active" id="perfil">
+					<h1>Datos del Cliente</h1>
+
+					<div class="row">
+
+						<!-- Datos del cliente-->
+						<div class="col-md-6">
+							
+							<div class="form-group">
+								<label for="cliCed">Cedula</label>
+								<input type="text" class="form-control" id="cliCed" placeholder="Nombre" disabled="">
+							</div>
+
+							<div class="form-group">
+								<label for="cliNombre">Nombre</label>
+								<input type="text" class="form-control" id="cliNombre" placeholder="Nombre" maxlength="20">
+							</div>
+
+							<div class="form-group">
+								<label for="cliApellido">Apellido</label>
+								<input type="text" class="form-control" id="cliApellido" placeholder="Apellido" maxlength="20">
+							</div>
+
+							<div class="form-group">
+								<label for="cliTelefono">Telefono</label>
+								<input type="text" class="form-control" id="cliTelefono" placeholder="Telefono" maxlength="20">
+							</div>
+
+						</div>
+
+						<!-- Imagen Aguncios -->
+						<div class="col-md-6">
+
+							<div class="form-group">
+								<label for="cliFechanac">Fecha de Nacimiento</label>
+								<input type="text" class="form-control" id="cliFechanac" placeholder="Fecha de Nacimiento" disabled="">
+							</div>
+
+							<div class="form-group">
+								<label for="cliFechareg">Fecha de Registro</label>
+								<input type="text" class="form-control" id="cliFechareg" placeholder="Fecha de Registro" disabled="">
+							</div>
+
+							<div class="form-group">
+								<label for="cliPuntos">Puntos</label>
+								<input type="text" class="form-control" id="cliPuntos" placeholder="Puntos Cashback" disabled="">
+							</div>
+
+							<div class="form-group">
+								<label for="cliEstado">Estado</label>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"  id="cliEstado"> Habilitado
+									</label>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<div class="row text-center">
+
+						<div class="alert alert-success hidden" role="alert" id="alertSuccess">
+						  	<a href="#" class="alert-link" id="alertSuccessTxt">...</a>
+						</div>
+
+						<div class="alert alert-danger hidden" role="alert" id="alertError">
+							<a href="#" class="alert-link" id="alertErrorTxt">...</a>
+						</div>
+
+						<div class="btn btn-lg btn-primary" id="btnActualizar">Actualizar</div>
+					</div>
+				</div>
+
+
+
+
+				<div role="tabpanel" class="tab-pane fade " id="transacciones">
+					<h1>Transacciones</h1>
+					<!-- Tabla de Clientes -->
+
+					<table class="table" id="tablaTransacciones">
+
+						<thead>
+							<tr>
+								<th>Numero de Factura</th>
+								<th>Fecha de Compra</th>
+								<th>Moneda</th>
+								<th>Puntos Redimidos</th>
+								<th>Total</th>
+							</tr>
+						</thead>
+					</table>
+
+					<div class="alert alert-success hidden" role="alert" id="alertSuccess2">
+						  	<a href="#" class="alert-link" id="alertSuccessTxt2">...</a>
+					</div>
+
+					<div class="alert alert-danger hidden" role="alert" id="alertError2">
+						<a href="#" class="alert-link" id="alertErrorTxt2">...</a>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+	<script type="text/javascript" src="public/jquery/jquery.js"></script>
+	<script type="text/javascript" src="public/jquery/jquery-ui.js"></script>
+	<script type="text/javascript" src="public/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="public/js/administrarClienteDetalle.js"></script>
+</body>
+</html>

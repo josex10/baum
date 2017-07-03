@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JOFurniture Administrar Clientes</title>
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="public/jquery/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+</head>
+<body>
+
+<div class="container">
+	<!-- Menu -->
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JOFurniture</a>
+			    </div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					<li><a href="?view=index">Inicio</a></li>
+					<li class="active"><a href="#">Administrar Clientes<span class="sr-only">(current)</span></a></li>
+					<li><a href="?view=agregarcliente">Agregar Clientes</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<!-- body -->
+	<div class="jumbotron">
+		<h1 class="display-3">Administración de Clientes</h1>
+		<p class="lead">En esta sección podrás buscar nuestros clientes por distintos métodos para poder editarlo, deshabilitarlo, consultar los puntos cashback y visualizar sus movimientos.</p>
+		<hr class="my-4">
+		<p class="lead">
+			<div class="jumbotronBtns">
+				<a class="btn btn-primary btn-lg" href="#" role="button" id="btnBuscarTodos">Buscar todos los clientes</a>
+				<a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#myModal" >Buscar cliente por Cédula</a>
+			</div>
+			
+		</p>
+	</div>
+
+	<!-- Modal Buscar Cliente por Cedula-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Busqueda de clientes por número de cédula</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<label>Ingrese el número cédula</label>
+	        <input type="text" name="" id="frmBuscarClienteXCed" maxlength="20">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnBuscarCliente">Buscar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+		<!-- Tabla de Clientes -->
+		<table class="table" id="tablaClientes">
+
+			<thead>
+				<tr>
+					<th>Cédula</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Fecha Nacimiento</th>
+					<th>Teléfono</th>
+					<th>Estado</th>
+					<th>Acción</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	
+
+	<!-- Espacio de mensajes -->
+	<div class="alert alert-success hidden" role="alert" id="alertSuccess">
+	  	<a href="#" class="alert-link" id="alertSuccessTxt">...</a>
+	</div>
+
+	<div class="alert alert-danger hidden" role="alert" id="alertError">
+		<a href="#" class="alert-link" id="alertErrorTxt">...</a>
+	</div>
+
+
+
+
+</div>
+
+
+	<script type="text/javascript" src="public/jquery/jquery.js"></script>
+	<script type="text/javascript" src="public/jquery/jquery-ui.js"></script>
+	<script type="text/javascript" src="public/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="public/js/administrarCliente.js"></script>
+</body>
+</html>

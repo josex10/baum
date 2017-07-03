@@ -1,0 +1,67 @@
+/*
+	Estilos Generales
+*/
+
+header{
+	padding-top: 4%;
+}
+
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+footer{
+	bottom: 0px;
+	padding: 30px;
+	background-color: #e53549;
+	color: white;
+	text-align: center;
+}
+
+
+/*
+	Estilo para el index
+*/
+
+.jumbotronColor{
+	background-color: #0d5279;
+	color: white;
+}
+
+.thumbnailIndex .thumbnailBtn{
+	margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.thumbnailIndex h3{
+	text-align: center;
+
+}
+
+.thumbnailIndex .caption{
+	text-align: justify;
+}
+
+.thumbnailIndex a{
+	text-align: center;
+}
+
+/*
+	Estilo para administrar cliente
+*/
+.jumbotronBtns{
+	margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+#tablaClientes{
+}
